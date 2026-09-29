@@ -129,7 +129,7 @@ export default function CompatibilityResult({
         
         <div className="relative z-10">
           <p className="text-white/70 font-semibold tracking-widest uppercase text-sm mb-2">
-            Compatibility Score
+            Ahmed × Nesrine
           </p>
           
           <div className="flex items-end justify-center gap-1 mb-2">

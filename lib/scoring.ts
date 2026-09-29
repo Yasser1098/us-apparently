@@ -73,31 +73,31 @@ function getConclusion(
 ): { conclusion: string; subConclusion: string } {
   if (score >= 90) {
     return {
-      conclusion: 'This is getting suspicious. Someone explain why we agree on everything.',
-      subConclusion: `${matchCount} identical answers. Either we share one brain cell or this is fate doing too much.`,
+      conclusion: 'Nesrine… this is getting suspicious 😂',
+      subConclusion: 'You two agree on way too many things. Should we skip the awkward first date and start discussing wedding seating arrangements? 👀',
     };
   }
   if (score >= 75) {
     return {
-      conclusion: 'Okayyy… we might actually work. 👀',
-      subConclusion: `${matchCount} matching answers. Should we just skip the awkward first date?`,
+      conclusion: 'Okayyy… that\'s actually pretty convincing 👀',
+      subConclusion: 'Someone might want to investigate this further.',
     };
   }
   if (score >= 60) {
     return {
-      conclusion: 'Not bad. Enough in common to be dangerous.',
-      subConclusion: `${matchCount} answers matched. Apparently we have a type — each other.`,
+      conclusion: 'Not bad at all 😌',
+      subConclusion: 'Enough similarities to make things interesting… and enough differences to keep us entertained.',
     };
   }
   if (score >= 40) {
     return {
-      conclusion: 'Opposites attract, apparently 😂',
-      subConclusion: `Only ${matchCount} matches, but honestly that might keep things interesting.`,
+      conclusion: 'Well… this could be interesting 😂',
+      subConclusion: 'Clearly we\'re going to have things to debate.',
     };
   }
   return {
-    conclusion: "Well… at least we'll never run out of things to argue about.",
-    subConclusion: `${matchCount} matching answers. This is either a challenge or a cautionary tale.`,
+    conclusion: 'Okay, apparently you enjoy disagreeing with me 😂',
+    subConclusion: 'Which is either terrible news… or exactly what makes this interesting.',
   };
 }
 

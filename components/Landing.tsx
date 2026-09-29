@@ -76,7 +76,7 @@ export default function Landing({ isPlayer = false, onStart }: LandingProps) {
         transition={{ delay: 0.6 }}
         className="mt-6 flex items-center gap-2 text-white/50 text-xs font-medium uppercase tracking-widest"
       >
-        <span>30 questions</span>
+        <span>20 questions</span>
         <span className="w-1 h-1 rounded-full bg-white/30" />
         <span>Zero scientific credibility</span>
       </motion.div>

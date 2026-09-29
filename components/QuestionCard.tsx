@@ -25,7 +25,22 @@ export default function QuestionCard({
       className="w-full"
     >
       <div className="mb-8">
-        <h2 className="text-3xl font-bold text-white mb-2 leading-tight">
+        {question.image && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.1 }}
+            className="mb-6 rounded-2xl overflow-hidden shadow-2xl border border-white/20"
+          >
+            <img 
+              src={question.image} 
+              alt="Question context" 
+              className="w-full object-cover max-h-[300px]" 
+            />
+          </motion.div>
+        )}
+        
+        <h2 className="text-3xl font-bold text-white mb-2 leading-tight whitespace-pre-wrap">
           {question.text}
         </h2>
         {question.emoji && (
@@ -75,6 +90,17 @@ export default function QuestionCard({
           );
         })}
       </div>
+
+      {question.imageNote && (
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="text-center text-sm font-medium text-white/60 mt-6 italic"
+        >
+          {question.imageNote}
+        </motion.p>
+      )}
     </motion.div>
   );
 }

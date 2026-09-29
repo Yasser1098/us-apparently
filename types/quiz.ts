@@ -12,6 +12,9 @@ export interface Question {
   category: string;
   text: string;
   emoji?: string;
+  image?: string;
+  imageNote?: string;
+  transitionMessage?: string;
   type: AnswerType;
   options?: AnswerOption[];
   weight: number;
